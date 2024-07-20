@@ -11,10 +11,10 @@ import net.calledtoconstruct.Right;
 
 class WhenInvokingMergeFailToRightTest {
 
-    private final static Random random = new Random();
-    private final static long LEFT_VALUE = random.nextLong();
-    private final static boolean OTHER_LEFT_VALUE = random.nextBoolean();
-    private final static String OUTPUT = String.format("%d", random.nextLong());
+    private final static Random RANDOM = new Random();
+    private final static long LEFT_VALUE = RANDOM.nextLong();
+    private final static boolean OTHER_LEFT_VALUE = RANDOM.nextBoolean();
+    private final static String OUTPUT = String.format("%d", RANDOM.nextLong());
 
     private final Either<Integer, Long> right = new Right<>(LEFT_VALUE);
     private final Either<String, Boolean> other = new Right<>(OTHER_LEFT_VALUE); 
