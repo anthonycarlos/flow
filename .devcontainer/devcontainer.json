@@ -2,10 +2,10 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/java
 {
 	"name": "Java",
-	"image": "mcr.microsoft.com/devcontainers/java:17",
+	"image": "mcr.microsoft.com/devcontainers/java:21",
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
-			"version": "none",
+			"version": "21",
 			"installMaven": "true",
 			"installGradle": "false"
 		},

@@ -53,7 +53,7 @@ public class DataService {
             final var count = dataRepository.count();
             stopWatch.stop();
 
-            final var duration = stopWatch.getLastTaskTimeMillis();
+            final var duration = stopWatch.lastTaskInfo().getTimeMillis();
 
             return new Left<>(new Tuple3<>(rows, count, duration));
         } catch (final DataAccessException exception) {
